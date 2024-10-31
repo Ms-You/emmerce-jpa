@@ -38,6 +38,9 @@ public enum ErrorCode {
     ORDER_NOT_COMPLETED(HttpStatus.BAD_REQUEST.value(), "주문이 완료되지 않았습니다."),
     ORDER_ALREADY_CANCELED(HttpStatus.BAD_REQUEST.value(), "이미 취소된 주문입니다."),
 
+    // OrderProduct
+    ORDER_PRODUCT_NOT_FOUND(HttpStatus.BAD_REQUEST.value(), "주문 정보에서 상품을 찾을 수 없습니다."),
+
     // Delivery
     DELIVERY_NOT_FOUND_BY_ORDER_PRODUCT(HttpStatus.BAD_REQUEST.value(), "올바른 배송 정보를 찾을 수 없습니다."),
 
